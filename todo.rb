@@ -6,6 +6,7 @@ require "tilt/erubis"
 configure do
   enable :sessions
   set :session_secret, '51d2deb7cc8bd1738a3cf4b899aeedc5bb509ab8b94161e9c51b8860f043ca59'
+  set :erb, :escape_html => true
 end
 
 helpers do
